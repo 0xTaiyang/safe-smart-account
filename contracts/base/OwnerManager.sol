@@ -15,7 +15,13 @@ abstract contract OwnerManager is SelfAuthorized, IOwnerManager {
     //      1. `owners[SENTINEL_OWNERS]` contains the first owner
     //      2. `owners[last_owner]` points back to SENTINEL_OWNERS
     address internal constant SENTINEL_OWNERS = address(0x1);
-
+    
+    // check address one by one, 
+    // start by SENTINEL_OWNERS(0x1)
+    // end if reach SENTINEL_OWNERS(0x1) again
+    // 0x1     => Owner 1
+    // Owner 1 => Owner 2
+    // Owner 2 => 0x1
     mapping(address => address) internal owners;
     uint256 internal ownerCount;
     uint256 internal threshold;

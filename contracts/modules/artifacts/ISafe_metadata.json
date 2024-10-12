@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					},
+					{
+						"internalType": "enum Enum.Operation",
+						"name": "operation",
+						"type": "uint8"
+					}
+				],
+				"name": "execTransactionFromModule",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"execTransactionFromModule(address,uint256,bytes,uint8)": {
+					"details": "Allows a Module to execute a Safe transaction without any further confirmations.",
+					"params": {
+						"data": "Data payload of module transaction.",
+						"operation": "Operation type of module transaction.",
+						"to": "Destination address of module transaction.",
+						"value": "Ether value of module transaction."
+					}
+				},
+				"isOwner(address)": {
+					"returns": {
+						"_0": "Boolean if owner is an owner of the Safe."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"isOwner(address)": {
+					"notice": "Returns if `owner` is an owner of the Safe."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/modules/moduleTest.sol": "ISafe"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/modules/moduleTest.sol": {
+			"keccak256": "0xd50648a459c3b60e96c31b0d554e6c6b31cecdfd8af0f49ea22c82c1c247c19f",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://5eaa55f6e00ff15b932604862058c3793886ab300a79417cf16c54eeeea507d5",
+				"dweb:/ipfs/QmempE2CcyQGTCGqZEWjs8CmMBu6fhzhBJgWegKAWBnHwY"
+			]
+		}
+	},
+	"version": 1
+}

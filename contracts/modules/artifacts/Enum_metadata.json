@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/modules/moduleTest.sol": "Enum"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/modules/moduleTest.sol": {
+			"keccak256": "0xd50648a459c3b60e96c31b0d554e6c6b31cecdfd8af0f49ea22c82c1c247c19f",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://5eaa55f6e00ff15b932604862058c3793886ab300a79417cf16c54eeeea507d5",
+				"dweb:/ipfs/QmempE2CcyQGTCGqZEWjs8CmMBu6fhzhBJgWegKAWBnHwY"
+			]
+		}
+	},
+	"version": 1
+}
