@@ -2,7 +2,7 @@
 pragma solidity ^0.8.26;
 
 contract MerkleProof {
-    // gas: 1997:
+    // 1997 gas
     function verifyCalldata(
         bytes32[] calldata proof,
         bytes32 root,
@@ -34,7 +34,7 @@ contract MerkleProof {
         return computedHash == root;
     }
 
-    // gas: 2303:
+    // 2303 gas
     function verifyCalldataOld(
         bytes32[] calldata proof,
         bytes32 root,

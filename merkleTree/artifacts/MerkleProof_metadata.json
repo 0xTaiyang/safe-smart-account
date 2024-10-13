@@ -6,6 +6,48 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "getSelector",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "proof",
+						"type": "bytes32[]"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "root",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "leaf",
+						"type": "bytes32"
+					}
+				],
+				"name": "giakjecdfhb",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "bytes32[]",
@@ -92,11 +134,11 @@
 	},
 	"sources": {
 		"merkleTree/merkleTree.sol": {
-			"keccak256": "0x35d52919459ec0d09f28de8845d8e1cf2e728257fe8a1a9b911a0dfd3ddac268",
+			"keccak256": "0x9adb1cd5a81809bb74f7188b3fdcde033f939eea0cad5b203ca92312ab1ff696",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b180f2839a996d84c8e7e5c9b022c08ec28c76cbc3bac0e02d51d9b7b693bcfa",
-				"dweb:/ipfs/QmXCvHniF3AoXMEZ8wJosUDAsyMXrYx6k9xHCv6NarkxRc"
+				"bzz-raw://b730c4fc219231ff9ecc9d4f00681ba26bc8ece6a4f92690af91cbe03d6921a4",
+				"dweb:/ipfs/QmW56AxgGPVdowYk3XdL2wxKyspgucnzL6t5pKqCoYRryL"
 			]
 		}
 	},
