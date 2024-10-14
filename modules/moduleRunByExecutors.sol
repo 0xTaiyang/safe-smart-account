@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: LGPL-3.0-only
 pragma solidity >=0.7.0 <0.9.0;
 
+import "@openzeppelin/contracts/cryptography/MerkleProof.sol";
+
 interface ISafe {
     function execTransactionFromModule(
         address to,
@@ -21,8 +23,8 @@ contract Enum {
 
 contract ModuleTest {
 
-    ISafe safe;
-    bytes32 public root;
+    ISafe public safe;
+    bytes32 public merkleRoot;
     mapping(address => bool) public externalExecutors;
 
     constructor(address _safeAddress) {
@@ -47,8 +49,8 @@ contract ModuleTest {
         }
     }
 
-    function updateMerkleRoot(bytes32 _root) external onlySafe {
-        root = _root;
+    function updateMerkleRoot(bytes32 _merkleRoot) external onlySafe {
+        merkleRoot = _merkleRoot;
     }
 
     // implementation
@@ -95,6 +97,6 @@ contract ModuleTest {
             }
             unchecked { ++i; }
         }
-        return computedHash == root;
+        return computedHash == merkleRoot;
     }
 }
